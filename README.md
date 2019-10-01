@@ -14,11 +14,13 @@ It should be remembered that the task of semantic segmentation is simply to pred
 <p align="center">
 The Intersection over Union (IoU) example source
 <p align="center">
-<p align="right">The IoU metric is calculated by dividing the number of the pixels common between the ground truth (A) and predicted output (B) by the total number of pixels present across both.
-  
-  <p align="right">
-<img src="./img/2.PNG" alt="The IoU metric" />
 <p align="right">
+  The IoU metric is calculated by dividing the number of the pixels common between the ground truth (A) and 
+  predicted output (B) by the total number of pixels present across both.
+  
+  <p align="center">
+<img src="./img/2.PNG" alt="The IoU metric" />
+<p align="center">
 
   The term A∩B implies the pixels belonging to both the ground truth (A) and prediction (B) areas are shown while the term A∪B implies all the pixels present in each of these areas. Finally, given that each class has it's our IoU score, a global mean IoU score is obtained by averaging all classes’ IoU scores. 
 
