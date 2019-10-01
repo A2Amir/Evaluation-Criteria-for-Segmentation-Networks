@@ -27,12 +27,12 @@ The IoU metric is calculated by dividing the number of the pixels common between
   
 2. [Dice similarity coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) : This criterion determines the similarity between the results of segmentation and its corresponding ground truths in a slightly different way. Because of its more simplicity, we first consider the IoU metric.
 
-<p align="right">
+<p align="center">
 <img src="./img/3.PNG" alt="The Intersection over Union example for the dice similarity coefficient source" />
 <p align="center">
 The Intersection over Union example for the dice similarity coefficient source
 <p align="center">
-<p align="right">
+<p align="center">
   
 
 
