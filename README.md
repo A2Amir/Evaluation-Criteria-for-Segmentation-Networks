@@ -8,7 +8,7 @@ It should be remembered that the task of semantic segmentation is simply to pred
 
 ##  The most well-known and common criteria used by researchers are:
 
-1.  Jaccard similarity: deduced from the Intersection over Union (IoU) metric. This criterion is employed to quantify the overlap between the predicted output and ground truth. For example, by taking into account the ground truth, the IoU score of the following prediction can be calculated as follows. 
+#####	1.  Jaccard similarity: deduced from the Intersection over Union (IoU) metric. This criterion is employed to quantify the overlap between the predicted output and ground truth. For example, by taking into account the ground truth, the IoU score of the following prediction can be calculated as follows. 
 <p align="right">
 <img src="./img/1.PNG" alt="The Intersection over Union (IoU) example source" />
 <p align="center">
@@ -25,7 +25,7 @@ The IoU metric is calculated by dividing the number of the pixels common between
 
   The term A∩B implies the pixels belonging to both the ground truth (A) and prediction (B) areas are shown while the term A∪B implies all the pixels present in each of these areas. Finally, given that each class has it's our IoU score, a global mean IoU score is obtained by averaging all classes’ IoU scores. 
   
-2. [Dice similarity coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) : This criterion determines the similarity between the results of segmentation and its corresponding ground truths in a slightly different way. Because of its more simplicity, we first consider the IoU metric.
+#####	2. [Dice similarity coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) : This criterion determines the similarity between the results of segmentation and its corresponding ground truths in a slightly different way. Because of its more simplicity, we first consider the IoU metric.
 
 <p align="center">
 <img src="./img/3.PNG" alt="The Intersection over Union example for the dice similarity coefficient source" />
@@ -48,7 +48,7 @@ Furthermore, the yellow region possesses the pixels, which are missed from segme
 <p align="center">
 
 
-3.	In the following, we introduce four evaluation metrics. Inspired from the paper entitled “Fully Convolutional Networks for Semantic Segmentation [3]”, these metrics are extracted based on pixel accuracy and IoU metric. 
+##### 3. In the following, we introduce four evaluation metrics. Inspired from the paper entitled “Fully Convolutional Networks for Semantic Segmentation [3]”, these metrics are extracted based on pixel accuracy and IoU metric. 
 
 
 Regarding the notations in this paper:
