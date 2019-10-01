@@ -9,6 +9,13 @@ It should be remembered that the task of semantic segmentation is simply to pred
 ##  The most well-known and common criteria used by researchers are:
 
 1.  Jaccard similarity: deduced from the Intersection over Union (IoU) metric. This criterion is employed to quantify the overlap between the predicted output and ground truth. For example, by taking into account the ground truth, the IoU score of the following prediction can be calculated as follows. 
+<p align="right">
+<img src="./img/1.PNG" alt="The Intersection over Union (IoU) example source" />
+<p align="center">
+The Intersection over Union (IoU) example source
+<p align="center">
+<p align="right">
+
 
 [1]	A. A. Taha, A. Hanbury, and O. A. J. del Toro, “A formal method for selecting evaluation metrics for image segmentation,” in 2014 IEEE International Conference on Image Processing (ICIP), 2014, pp. 932–936.
 
