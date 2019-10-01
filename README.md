@@ -48,9 +48,16 @@ Furthermore, the yellow region possesses the pixels, which are missed from segme
 <p align="center">
 
 
-3.	In the following, we introduce four evaluation metrics. Inspired from the paper entitled “Fully Convolutional Networks for Semantic Segmentation [3]”, these metrics are extracted based on pixel accuracy and IoU metric [4]. 
+3.	In the following, we introduce four evaluation metrics. Inspired from the paper entitled “Fully Convolutional Networks for Semantic Segmentation [3]”, these metrics are extracted based on pixel accuracy and IoU metric. 
 
 
+Regarding the notations in this paper:
+	* n_cl: the number of classes.
+	* t_i: the total number of pixels in class i.
+	* n_ij: the number of pixels of class we predicted to belong to class j. 
+	* n_ii: the number of correctly classified pixels (true positives).
+	* n_ij: the number of pixels wrongly classified (false positives).
+	* n_ji: the number of pixels wrongly not classified (false negatives).
 
 
 [1]	A. A. Taha, A. Hanbury, and O. A. J. del Toro, “A formal method for selecting evaluation metrics for image segmentation,” in 2014 IEEE International Conference on Image Processing (ICIP), 2014, pp. 932–936.
@@ -59,4 +66,4 @@ Furthermore, the yellow region possesses the pixels, which are missed from segme
 
 [3]	J. Long, E. Shelhamer, and T. Darrell, “Fully convolutional networks for semantic segmentation,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2015, pp. 3431–3440.
 
-[4]	J. B. Campbell and R. H. Wynne, Introduction to remote sensing. Guilford Press, 2011.
+
