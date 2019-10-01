@@ -34,7 +34,18 @@ The Intersection over Union example for the dice similarity coefficient source
 <p align="center">
 <p align="center">
   
+Assume that the “ground truth” box represents the segmentation region deduced by people and the “prediction” box represents the segmentation resulted from a deep learning technique—both on the same image. The blue rectangle is the overlapping area (between two mentioned boxes) and shows the region in which pixels matching the ground truth can be detected by a segmentation model. These pixels are called true positives (TP). Also, the red region includes the pixels called false positives (FP).
+Furthermore, the yellow region possesses the pixels, which are missed from segmentation and called false negatives (FN). When the overlapping area completely covers the union area, the segmentation is flawless, the value of IoU criterion is 1, and the values of FP, TP, and FN are zero. Therefore, the IoU criterion [formula](https://medium.com/datadriveninvestor/deep-learning-in-medical-imaging-3c1008431aaf) can be rewritten as follows:
 
+  <p align="center">
+<img src="./img/4.PNG" alt=" the IoU criterion [formula]" />
+<p align="center">
+
+ Also, the Dice Similarity Coefficient can be calculated as [follows]()
+ 
+   <p align="center">
+<img src="./img/5.PNG" alt=" the Dice Similarity Coefficient " />
+<p align="center">
 
 [1]	A. A. Taha, A. Hanbury, and O. A. J. del Toro, “A formal method for selecting evaluation metrics for image segmentation,” in 2014 IEEE International Conference on Image Processing (ICIP), 2014, pp. 932–936.
 
