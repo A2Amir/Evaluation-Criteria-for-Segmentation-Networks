@@ -34,8 +34,67 @@ The Intersection over Union example for the dice similarity coefficient source
 <p align="center">
 <p align="center">
   
+Assume that the “ground truth” box represents the segmentation region deduced by people and the “prediction” box represents the segmentation resulted from a deep learning technique—both on the same image. The blue rectangle is the overlapping area (between two mentioned boxes) and shows the region in which pixels matching the ground truth can be detected by a segmentation model. These pixels are called true positives (TP). Also, the red region includes the pixels called false positives (FP).
+Furthermore, the yellow region possesses the pixels, which are missed from segmentation and called false negatives (FN). When the overlapping area completely covers the union area, the segmentation is flawless, the value of IoU criterion is 1, and the values of FP, TP, and FN are zero. Therefore, the IoU criterion [formula](https://medium.com/datadriveninvestor/deep-learning-in-medical-imaging-3c1008431aaf) can be rewritten as follows:
+
+  <p align="center">
+<img src="./img/4.PNG" alt=" the IoU criterion [formula]" />
+<p align="center">
+
+ Also, the Dice Similarity Coefficient can be calculated as [follows]()
+ 
+   <p align="center">
+<img src="./img/5.PNG" alt=" the Dice Similarity Coefficient " />
+<p align="center">
 
 
+3.	In the following, we introduce four evaluation metrics. Inspired from the paper entitled “Fully Convolutional Networks for Semantic Segmentation [3]”, these metrics are extracted based on pixel accuracy and IoU metric. 
+
+
+Regarding the notations in this paper:
+
+	* n_cl: the number of classes.
+	* t_i: the total number of pixels in class i.
+	* n_ij: the number of pixels of class we predicted to belong to class j. 
+	* n_ii: the number of correctly classified pixels (true positives).
+	* n_ij: the number of pixels wrongly classified (false positives).
+	* n_ji: the number of pixels wrongly not classified (false negatives).
+
+3.1 Pixel Accuracy (PA): as overall accuracy, it can be calculated as follows [4],[5]
+
+<p align="center">
+<img src="./img/6.PNG" alt=" Pixel Accuracy (PA) " />
+<p align="center">
+
+
+3.2 Mean Accuracy (MA): is the average accuracy among all the classes related to ground truths. This metric can be calculated as follows [4],[5]. 
+
+<p align="center">
+<img src="./img/7.PNG" alt="  Mean Accuracy (MA) " />
+<p align="center">
+
+3.3 Mean Intersection over Union (MIoU): is commonly used for semantic segmentation performance evaluation and can be calculated as follows [4], [5].
+<p align="center">
+<img src="./img/8.PNG" alt="  Mean Intersection over Union (MIoU) " />
+<p align="center">
+	
+3.4 Frequency weighted intersection over union (FWIoU): the difference between this metric and MIoU is that it considers the number of data points in each class [4], [5]
+<p align="center">
+<img src="./img/9.PNG" alt="  Frequency weighted intersection over union (FWIoU) " />
+<p align="center">
+	
+	
+It’s worth noting that unlike MIoU and FWIoU, the other two metrics mentioned above aren’t susceptible to unbalanced datasets [5].
+	
 [1]	A. A. Taha, A. Hanbury, and O. A. J. del Toro, “A formal method for selecting evaluation metrics for image segmentation,” in 2014 IEEE International Conference on Image Processing (ICIP), 2014, pp. 932–936.
 
 [2]	M. Möller, L. Lymburner, and M. Volk, “The comparison index: A tool for assessing the accuracy of image segmentation,” Int. J. Appl. Earth Obs. Geoinf., vol. 9, no. 3, pp. 311–321, 2007.
+
+[3]	J. Long, E. Shelhamer, and T. Darrell, “Fully convolutional networks for semantic segmentation,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2015, pp. 3431–3440.
+
+
+[4]	J. Long, E. Shelhamer, and T. Darrell, “Fully convolutional networks for semantic segmentation,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2015, pp. 3431–3440.
+
+[5]	S. Haugen, A. Barros, C. van Gulijk, T. Kongsvik, and J. E. Vinnem, Safety and Reliability – Safe Societies in a Changing World: Proceedings of ESREL 2018, June 17-21, 2018, Trondheim, Norway. CRC Press, 2018.
+
+
