@@ -85,7 +85,9 @@ Regarding the notations in this paper:
 	
 	
 It’s worth noting that unlike MIoU and FWIoU, the other two metrics mentioned above aren’t susceptible to unbalanced datasets [5].
-	
+
+
+---
 [1]	A. A. Taha, A. Hanbury, and O. A. J. del Toro, “A formal method for selecting evaluation metrics for image segmentation,” in 2014 IEEE International Conference on Image Processing (ICIP), 2014, pp. 932–936.
 
 [2]	M. Möller, L. Lymburner, and M. Volk, “The comparison index: A tool for assessing the accuracy of image segmentation,” Int. J. Appl. Earth Obs. Geoinf., vol. 9, no. 3, pp. 311–321, 2007.
