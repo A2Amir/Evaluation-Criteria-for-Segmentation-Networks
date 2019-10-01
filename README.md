@@ -52,6 +52,7 @@ Furthermore, the yellow region possesses the pixels, which are missed from segme
 
 
 Regarding the notations in this paper:
+
 	* n_cl: the number of classes.
 	* t_i: the total number of pixels in class i.
 	* n_ij: the number of pixels of class we predicted to belong to class j. 
