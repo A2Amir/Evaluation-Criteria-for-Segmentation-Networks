@@ -1,10 +1,10 @@
 # Evaluation-Criteria
-In this section, we will discuss common methods for evaluating segmentation model 
+In this section, we will discuss common methods for evaluating segmentation model:
 
 The segmentation quality evaluation is very vital for image processing, particularly in security cases, including autonomous vehicles.
 There are many evaluation criteria developed for segmentation evaluation so that researchers can make a choice based on their needs. 
 It’s worth noting that there isn’t any collectively consented technique to make this choice [1][2].
-It should be remembered that the task of semantic segmentation is simply to predict the class of each pixel in an image and the predicted output’s shape matches the input shape in terms of width, height, and depth.
+It should be remembered that the task of  segmentation is simply to predict the class of each pixel in an image and the predicted output’s shape matches the input shape in terms of width, height, and depth.
 
 ##  The most well-known and common criteria used by researchers are:
 
