@@ -1,6 +1,4 @@
-# Evaluation-Criteria
-In this section, we will discuss common methods for evaluating segmentation model:
-
+# Evaluation-Criteria:
 The segmentation quality evaluation is very vital for image processing, particularly in security cases, including autonomous vehicles.
 There are many evaluation criteria developed for segmentation evaluation so that researchers can make a choice based on their needs. 
 It’s worth noting that there isn’t any collectively consented technique to make this choice [1][2].
