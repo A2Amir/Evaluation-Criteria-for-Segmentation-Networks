@@ -46,7 +46,7 @@ Furthermore, the yellow region possesses the pixels, which are missed from segme
 <p align="center">
 
 
-##### 3. In the following, we introduce four evaluation metrics. Inspired from the paper entitled “Fully Convolutional Networks for Semantic Segmentation [3]”, these metrics are extracted based on pixel accuracy and IoU metric. 
+##### 3. In the following, we introduce four evaluation metrics. Inspired from the paper entitled “Fully Convolutional Networks for Semantic Segmentation [3]”, these metrics are extracted based on pixel accuracy and IoU metric[Code](https://github.com/A2Amir/Evaluation-Criteria-for-Segmentation-Networks/blob/master/Evaluate.ipynb). 
 
 
 Regarding the notations in this paper:
